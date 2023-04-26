@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/meeting-cost-calculator/static/css/main.2085a448.css",
+    "main.css": "/meeting-cost-calculator/static/css/main.549a8631.css",
     "main.js": "/meeting-cost-calculator/static/js/main.aba957d3.js",
     "static/js/787.1360b599.chunk.js": "/meeting-cost-calculator/static/js/787.1360b599.chunk.js",
     "index.html": "/meeting-cost-calculator/index.html",
-    "main.2085a448.css.map": "/meeting-cost-calculator/static/css/main.2085a448.css.map",
+    "main.549a8631.css.map": "/meeting-cost-calculator/static/css/main.549a8631.css.map",
     "main.aba957d3.js.map": "/meeting-cost-calculator/static/js/main.aba957d3.js.map",
     "787.1360b599.chunk.js.map": "/meeting-cost-calculator/static/js/787.1360b599.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2085a448.css",
+    "static/css/main.549a8631.css",
     "static/js/main.aba957d3.js"
   ]
 }
