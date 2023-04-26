@@ -31,28 +31,31 @@ function App() {
     );
   }
 
+  const hours = Math.floor(duration / 60);
+  const minutes = duration % 60;
+  const durationDisplay = `${hours > 0 ? hours + ' hours' : ''} ${minutes > 0 ? minutes + ' minutes' : ''}`.trim();
+
   return (
     <div className="App">
-      <h1>Schmiede.one Meeting Cost Calculator</h1>
+      <h1>Meeting Cost Calculator</h1>
       <label>
-        Duration:
-        <select value={duration} onChange={handleChange(setDuration)}>
-        <option value={15}>15 minutes</option>
-        <option value={30}>30 minutes</option>
-        <option value={45}>45 minutes</option>
-        <option value={60}>60 minutes</option>
-        <option value={90}>90 minutes</option>
-        <option value={120}>120 minutes</option>
-        <option value={180}>3 hrs</option>
-        <option value={240}>4 hrs</option>
-        <option value={360}>6 hrs</option>
-        <option value={480}>8 hrs</option>
-        </select>
+        Duration: {durationDisplay}
+        <input
+          type="range"
+          min={0}
+          max={600}
+          step={15}
+          value={duration}
+          onChange={handleChange(setDuration)}
+        />
       </label>
       <label>
-        Number of attendees:
+        Number of attendees: {attendees}
         <input
-          type="number"
+          type="range"
+          min={1}
+          max={50}
+          step={1}
           value={attendees}
           onChange={handleChange(setAttendees)}
         />
@@ -72,5 +75,3 @@ function App() {
 }
 
 export default App;
-
-

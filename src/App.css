@@ -103,3 +103,47 @@ button:hover {
     margin: 0.2rem;
   }
 }
+
+input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #ddd;
+  outline: none;
+  border-radius: 3px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background: #d32f2f;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+input[type='range']::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  background: #d32f2f;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+input[type='range']::-ms-thumb {
+  width: 18px;
+  height: 18px;
+  background: #d32f2f;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+input[type='range']::-moz-range-progress {
+  background: #d32f2f;
+}
+
+input[type='range']::-ms-fill-lower {
+  background: #d32f2f;
+}
