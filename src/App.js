@@ -13,7 +13,7 @@ function App() {
     const newAttendees = setter === setAttendees ? Number(event.target.value) : attendees;
     const newAverageSalary = setter === setAverageSalary ? Number(event.target.value) : averageSalary;
 
-    const minutesPerYear = 60 * 8 * 5 * 52; // 60 minutes * 8 hours * 5 days * 52 weeks
+    const minutesPerYear = 60 * 8 * 5 * 45; // 60 minutes * 8 hours * 5 days * 52 weeks
     const costPerMinute = (newAverageSalary / minutesPerYear) * newAttendees;
     setMeetingCost(costPerMinute * newDuration);
   };
